@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>1~10随机数</title>
+<style>
+  body {
+    text-align: center;
+    margin-top: 60px;
+    font-family: sans-serif;
+  }
+  #num {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 40px 0;
+    color: #007bff;
+  }
+  button {
+    font-size: 20px;
+    padding: 12px 30px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="num">0</div>
+<button onclick="rand()">随机抽取</button>
+
+<script>
+function rand() {
+  var n = Math.floor(Math.random() * 10) + 1;
+  document.getElementById("num").innerText = n;
+}
+</script>
+
+</body>
+</html>
